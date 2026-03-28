@@ -34,10 +34,22 @@
 
   <!-- ヒーロー -->
   <section class="hero">
+    <!-- 湯気アニメーション -->
     <div class="hero-steam">
       <div class="steam steam-1"></div>
       <div class="steam steam-2"></div>
       <div class="steam steam-3"></div>
+      <div class="steam steam-4"></div>
+      <div class="steam steam-5"></div>
+    </div>
+    <!-- 水面キラキラ -->
+    <div class="hero-sparkles">
+      <div class="sparkle sparkle-1"></div>
+      <div class="sparkle sparkle-2"></div>
+      <div class="sparkle sparkle-3"></div>
+      <div class="sparkle sparkle-4"></div>
+      <div class="sparkle sparkle-5"></div>
+      <div class="sparkle sparkle-6"></div>
     </div>
     <div class="hero-content">
       <div class="hero-mascot">
@@ -48,15 +60,24 @@
           <img src="images/S__32374800.png" alt="つるが丘温泉" class="hero-logo-img" width="560" height="118" style="width:560px;height:118px;">
         </h1>
         <p class="hero-sub">創業<strong>67</strong>年 ── 地域に愛される街のお風呂屋さん</p>
-        <p class="hero-access">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          JR鶴ヶ丘駅から徒歩<strong>3</strong>分
-        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+            14:00〜24:00
+          </span>
+          <span class="hero-tag">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            JR鶴ヶ丘駅 徒歩<strong>3</strong>分
+          </span>
+        </div>
       </div>
     </div>
+    <!-- 湯船の波 -->
     <div class="hero-wave">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120Z" fill="#fff"/>
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,80 C180,140 360,20 540,80 C720,140 900,20 1080,80 C1260,140 1440,60 1440,80 L1440,150 L0,150Z" fill="rgba(255,255,255,0.3)"/>
+        <path d="M0,100 C240,140 480,60 720,100 C960,140 1200,60 1440,100 L1440,150 L0,150Z" fill="rgba(255,255,255,0.5)"/>
+        <path d="M0,110 C200,150 400,80 600,120 C800,150 1000,80 1200,110 C1350,130 1440,100 1440,110 L1440,150 L0,150Z" fill="#fff"/>
       </svg>
     </div>
   </section>
@@ -84,92 +105,114 @@
         </div>
         <div class="about-features">
           <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 48 48" width="48" height="48">
-                <rect x="8" y="20" width="32" height="20" rx="4" fill="none" stroke="#4CC8E0" stroke-width="2.5"/>
-                <path d="M14,20 V14 A10,10 0 0,1 34,14 V20" fill="none" stroke="#4CC8E0" stroke-width="2.5"/>
-                <path d="M16,8 Q18,2 20,8" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-                <path d="M24,6 Q26,0 28,6" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-              </svg>
+            <div class="feature-icon">♨</div>
+            <div class="feature-info">
+              <span class="feature-label">創業67年</span>
+              <span class="feature-desc">地域に根ざした老舗銭湯</span>
             </div>
-            <span class="feature-label">創業67年</span>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 48 48" width="48" height="48">
-                <rect x="6" y="16" width="36" height="24" rx="6" fill="none" stroke="#4CC8E0" stroke-width="2.5"/>
-                <path d="M12,16 Q12,8 24,8 Q36,8 36,16" fill="none" stroke="#4CC8E0" stroke-width="2.5"/>
-                <text x="24" y="33" text-anchor="middle" fill="#4CC8E0" font-size="11" font-weight="bold">100cm</text>
-              </svg>
+            <div class="feature-icon">💧</div>
+            <div class="feature-info">
+              <span class="feature-label">深さ100cm水風呂</span>
+              <span class="feature-desc">肩までどっぷり浸かれる</span>
             </div>
-            <span class="feature-label">深さ100cm水風呂</span>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 48 48" width="48" height="48">
-                <circle cx="24" cy="24" r="16" fill="none" stroke="#4CC8E0" stroke-width="2.5"/>
-                <path d="M16,20 Q20,14 24,20 Q28,26 32,20" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round"/>
-                <path d="M16,28 Q20,22 24,28 Q28,34 32,28" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round"/>
-              </svg>
+            <div class="feature-icon">🍃</div>
+            <div class="feature-info">
+              <span class="feature-label">季節の露天風呂</span>
+              <span class="feature-desc">四季折々の湯を堪能</span>
             </div>
-            <span class="feature-label">季節の露天風呂</span>
           </div>
         </div>
       </div>
+    </div>
+    <!-- 波の仕切り -->
+    <div class="section-wave">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1440,20 1440,30 L1440,60 L0,60Z" fill="#F0FAFC"/>
+      </svg>
     </div>
   </section>
 
   <!-- お風呂 -->
   <section id="baths" class="section baths">
+    <div class="bath-deco-steam">
+      <svg viewBox="0 0 100 200" class="deco-steam-left"><path d="M50,200 Q30,150 50,120 Q70,90 50,60 Q30,30 50,0" fill="none" stroke="rgba(76,200,224,0.1)" stroke-width="20" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 100 200" class="deco-steam-right"><path d="M50,200 Q70,150 50,120 Q30,90 50,60 Q70,30 50,0" fill="none" stroke="rgba(76,200,224,0.1)" stroke-width="20" stroke-linecap="round"/></svg>
+    </div>
     <div class="container">
       <h2 class="section-title">
         <span class="section-title-en">Baths</span>
         お風呂
       </h2>
+      <p class="section-lead">心も体もぽかぽかに。多彩な湯船をお楽しみください。</p>
       <div class="bath-grid">
         <div class="bath-card">
-          <div class="bath-icon">
-            <svg viewBox="0 0 80 80"><path d="M15,50 Q15,30 40,30 Q65,30 65,50" fill="none" stroke="#4CC8E0" stroke-width="3"/><rect x="10" y="50" width="60" height="16" rx="8" fill="#E8F7FA" stroke="#4CC8E0" stroke-width="2.5"/><path d="M30,24 Q32,16 34,24" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round" opacity="0.5"/><path d="M40,20 Q42,12 44,20" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round" opacity="0.5"/><path d="M50,24 Q52,16 54,24" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round" opacity="0.5"/></svg>
+          <div class="bath-icon-wrap">
+            <span class="bath-emoji">🛁</span>
           </div>
           <h3>主湯</h3>
           <p>広々とした湯船でゆったりくつろげる、つるが丘温泉のメインバス。</p>
+          <div class="bath-card-steam">
+            <span></span><span></span><span></span>
+          </div>
         </div>
         <div class="bath-card">
-          <div class="bath-icon">
-            <svg viewBox="0 0 80 80"><rect x="10" y="40" width="60" height="24" rx="8" fill="#E8F7FA" stroke="#4CC8E0" stroke-width="2.5"/><path d="M25,48 L25,56" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round"/><path d="M35,46 L35,58" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round"/><path d="M45,48 L45,56" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round"/><path d="M55,46 L55,58" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round"/><path d="M30,30 Q32,22 34,30" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round" opacity="0.5"/><path d="M46,28 Q48,20 50,28" fill="none" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round" opacity="0.5"/></svg>
+          <div class="bath-icon-wrap">
+            <span class="bath-emoji">💨</span>
           </div>
           <h3>ジェット風呂</h3>
           <p>強力な水流が全身をほぐします。肩こり・腰痛にもおすすめ。</p>
+          <div class="bath-card-steam">
+            <span></span><span></span><span></span>
+          </div>
         </div>
         <div class="bath-card">
-          <div class="bath-icon">
-            <svg viewBox="0 0 80 80"><rect x="10" y="40" width="60" height="24" rx="8" fill="#E8F7FA" stroke="#4CC8E0" stroke-width="2.5"/><path d="M30,46 L30,48 L36,48 L36,46 L42,56 L36,56 L36,54 L30,54 L30,56 L24,46Z" fill="none" stroke="#F5A623" stroke-width="2"/><path d="M50,46 L50,48 L56,48 L56,46 L62,56 L56,56 L56,54 L50,54 L50,56 L44,46Z" fill="none" stroke="#F5A623" stroke-width="2" transform="translate(-6,0)"/></svg>
+          <div class="bath-icon-wrap">
+            <span class="bath-emoji">⚡</span>
           </div>
           <h3>電気風呂</h3>
           <p>微弱な電気が流れるお湯で、ピリピリとした独特の刺激を体験。</p>
+          <div class="bath-card-steam">
+            <span></span><span></span><span></span>
+          </div>
         </div>
         <div class="bath-card">
-          <div class="bath-icon">
-            <svg viewBox="0 0 80 80"><rect x="15" y="42" width="50" height="20" rx="8" fill="#E8F7FA" stroke="#4CC8E0" stroke-width="2.5"/><circle cx="32" cy="34" r="8" fill="none" stroke="#4CC8E0" stroke-width="2"/><circle cx="48" cy="36" r="6" fill="none" stroke="#4CC8E0" stroke-width="2"/></svg>
+          <div class="bath-icon-wrap">
+            <span class="bath-emoji">👶</span>
           </div>
           <h3>子供風呂</h3>
-          <p>お子さまも安心して入れる浅めの湯船。ぬるめの温度で設定しています。</p>
+          <p>お子さまも安心して入れる浅めの湯船。ぬるめの温度で設定。</p>
+          <div class="bath-card-steam">
+            <span></span><span></span><span></span>
+          </div>
         </div>
         <div class="bath-card bath-card--featured">
-          <div class="bath-badge">おすすめ</div>
-          <div class="bath-icon">
-            <svg viewBox="0 0 80 80"><rect x="10" y="30" width="60" height="34" rx="8" fill="#D4F1F9" stroke="#4CC8E0" stroke-width="2.5"/><text x="40" y="52" text-anchor="middle" fill="#4CC8E0" font-size="13" font-weight="bold">100cm</text><path d="M20,28 L20,24" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round"/><path d="M60,28 L60,24" stroke="#4CC8E0" stroke-width="2" stroke-linecap="round"/></svg>
+          <div class="bath-badge">イチ推し</div>
+          <div class="bath-icon-wrap bath-icon-wrap--featured">
+            <span class="bath-emoji">🧊</span>
           </div>
-          <h3>水風呂</h3>
-          <p>深さ<strong>100cm</strong>。肩までどっぷり浸かれる自慢の水風呂。サウナ後のクールダウンに最高。</p>
+          <h3>水風呂 <small>深さ100cm</small></h3>
+          <p>肩までどっぷり浸かれる自慢の水風呂。サウナ後のクールダウンに最高。</p>
+          <div class="bath-depth">
+            <div class="bath-depth-bar">
+              <div class="bath-depth-fill"></div>
+              <span class="bath-depth-label">100cm</span>
+            </div>
+          </div>
         </div>
         <div class="bath-card">
-          <div class="bath-icon">
-            <svg viewBox="0 0 80 80"><rect x="10" y="40" width="60" height="24" rx="8" fill="#E8F7FA" stroke="#4CC8E0" stroke-width="2.5"/><circle cx="20" cy="28" r="8" fill="none" stroke="#F5A623" stroke-width="2"/><path d="M36,20 Q40,10 44,20" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/><path d="M50,24 Q54,14 58,24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/><path d="M24,16 Q28,6 32,16" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/></svg>
+          <div class="bath-icon-wrap">
+            <span class="bath-emoji">🌿</span>
           </div>
           <h3>露天風呂</h3>
-          <p>四季折々のお湯を楽しめる季節風呂。空を見上げながらの入浴は格別です。</p>
+          <p>四季折々のお湯を楽しめる季節風呂。空を見上げながらの入浴は格別。</p>
           <span class="bath-tag">季節風呂</span>
+          <div class="bath-card-steam">
+            <span></span><span></span><span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -184,63 +227,52 @@
       </h2>
       <div class="sauna-grid">
         <div class="sauna-card">
-          <div class="sauna-visual">
-            <svg viewBox="0 0 120 100">
-              <rect x="10" y="20" width="100" height="70" rx="10" fill="#FFF3E0" stroke="#F5A623" stroke-width="2.5"/>
-              <rect x="25" y="50" width="70" height="8" rx="4" fill="#F5A623" opacity="0.3"/>
-              <rect x="25" y="64" width="70" height="8" rx="4" fill="#F5A623" opacity="0.2"/>
-              <path d="M45,14 Q47,4 49,14" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M58,10 Q60,0 62,10" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M71,14 Q73,4 75,14" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-          </div>
+          <div class="sauna-icon">🔥</div>
           <h3>サウナ</h3>
           <p>高温のドライサウナで汗をしっかりかいて、日常のストレスを発散。水風呂との交互浴で「ととのい」体験を。</p>
+          <div class="sauna-temp">
+            <span class="temp-bar"><span class="temp-fill temp-fill--hot"></span></span>
+            高温
+          </div>
         </div>
         <div class="sauna-card">
-          <div class="sauna-visual">
-            <svg viewBox="0 0 120 100">
-              <rect x="10" y="20" width="100" height="70" rx="10" fill="#E8F5E9" stroke="#81C784" stroke-width="2.5"/>
-              <circle cx="40" cy="50" r="6" fill="#81C784" opacity="0.3"/>
-              <circle cx="60" cy="60" r="8" fill="#81C784" opacity="0.2"/>
-              <circle cx="80" cy="48" r="5" fill="#81C784" opacity="0.3"/>
-              <circle cx="50" cy="70" r="7" fill="#81C784" opacity="0.15"/>
-              <circle cx="75" cy="68" r="4" fill="#81C784" opacity="0.25"/>
-              <path d="M45,14 Q47,4 49,14" fill="none" stroke="#81C784" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M58,10 Q60,0 62,10" fill="none" stroke="#81C784" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M71,14 Q73,4 75,14" fill="none" stroke="#81C784" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-          </div>
+          <div class="sauna-icon">🌫</div>
           <h3>スチームサウナ</h3>
           <p>しっとりとした蒸気に包まれるスチームサウナ。お肌に優しく、サウナが苦手な方にもおすすめです。</p>
+          <div class="sauna-temp">
+            <span class="temp-bar"><span class="temp-fill temp-fill--mild"></span></span>
+            低温・高湿度
+          </div>
         </div>
       </div>
       <div class="totonoi-flow">
-        <h3>おすすめ「ととのい」ルーティン</h3>
+        <div class="totonoi-header">
+          <span class="totonoi-badge">TOTONOI</span>
+          <h3>おすすめ「ととのい」ルーティン</h3>
+        </div>
         <div class="flow-steps">
-          <div class="flow-step">
+          <div class="flow-step flow-step--sauna">
             <div class="flow-num">1</div>
+            <div class="flow-emoji">🔥</div>
             <div class="flow-label">サウナ</div>
             <div class="flow-time">8〜12分</div>
           </div>
-          <div class="flow-arrow">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4CC8E0" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-          <div class="flow-step">
+          <div class="flow-arrow">▶</div>
+          <div class="flow-step flow-step--water">
             <div class="flow-num">2</div>
+            <div class="flow-emoji">💧</div>
             <div class="flow-label">水風呂</div>
             <div class="flow-time">1〜2分</div>
           </div>
-          <div class="flow-arrow">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4CC8E0" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-          <div class="flow-step">
+          <div class="flow-arrow">▶</div>
+          <div class="flow-step flow-step--rest">
             <div class="flow-num">3</div>
+            <div class="flow-emoji">🍃</div>
             <div class="flow-label">外気浴</div>
             <div class="flow-time">5〜10分</div>
           </div>
         </div>
-        <p class="flow-note">これを2〜3セット繰り返すのがおすすめです</p>
+        <p class="flow-note">これを<strong>2〜3セット</strong>繰り返すのがおすすめです</p>
       </div>
     </div>
   </section>
@@ -252,33 +284,56 @@
         <span class="section-title-en">Information</span>
         営業案内
       </h2>
-      <div class="info-table-wrap">
-        <table class="info-table">
-          <tr>
-            <th>営業時間</th>
-            <td>14:00〜24:00</td>
-          </tr>
-          <tr>
-            <th>定休日</th>
-            <td>毎週月曜日</td>
-          </tr>
-          <tr>
-            <th>入浴料金</th>
-            <td>
-              大人（中学生以上）<strong>520円</strong><br>
-              中人（小学生）<strong>200円</strong><br>
-              小人（未就学児）<strong>100円</strong>
-            </td>
-          </tr>
-          <tr>
-            <th>サウナ</th>
-            <td>+150円（バスタオル付き）</td>
-          </tr>
-          <tr>
-            <th>設備</th>
-            <td>ドライヤー・ボディソープ・シャンプー完備</td>
-          </tr>
-        </table>
+      <div class="info-card">
+        <div class="info-row">
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div class="info-detail">
+              <span class="info-label">営業時間</span>
+              <span class="info-value">14:00〜24:00</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📅</div>
+            <div class="info-detail">
+              <span class="info-label">定休日</span>
+              <span class="info-value">毎週月曜日</span>
+            </div>
+          </div>
+        </div>
+        <div class="info-price">
+          <h3>入浴料金</h3>
+          <div class="price-grid">
+            <div class="price-item">
+              <span class="price-type">大人</span>
+              <span class="price-note">中学生以上</span>
+              <span class="price-amount">520<small>円</small></span>
+            </div>
+            <div class="price-item">
+              <span class="price-type">中人</span>
+              <span class="price-note">小学生</span>
+              <span class="price-amount">200<small>円</small></span>
+            </div>
+            <div class="price-item">
+              <span class="price-type">小人</span>
+              <span class="price-note">未就学児</span>
+              <span class="price-amount">100<small>円</small></span>
+            </div>
+            <div class="price-item price-item--sauna">
+              <span class="price-type">サウナ</span>
+              <span class="price-note">バスタオル付き</span>
+              <span class="price-amount">+150<small>円</small></span>
+            </div>
+          </div>
+        </div>
+        <div class="info-amenities">
+          <h3>設備・アメニティ</h3>
+          <div class="amenity-list">
+            <span class="amenity">🧴 ボディソープ</span>
+            <span class="amenity">🧴 シャンプー</span>
+            <span class="amenity">💇 ドライヤー</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -299,8 +354,13 @@
               大阪府大阪市東住吉区山坂5-4-13
             </p>
             <div class="access-route">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4CC8E0" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M12 8v8"/></svg>
-              <span>JR阪和線<strong>鶴ヶ丘駅</strong>から徒歩<strong>3分</strong></span>
+              <div class="route-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>
+              </div>
+              <div class="route-text">
+                <span>JR阪和線</span>
+                <strong>鶴ヶ丘駅</strong>から徒歩<strong>3分</strong>
+              </div>
             </div>
           </div>
         </div>
@@ -321,13 +381,21 @@
 
   <!-- フッター -->
   <footer class="footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1440,30 1440,40 L1440,80 L0,80Z" fill="#1a8a9e"/>
+      </svg>
+    </div>
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="images/S__32374799.png" alt="つるが丘温泉" class="footer-mascot-img" width="36" height="35" style="width:36px;height:35px;">
+          <img src="images/S__32374799.png" alt="つるが丘温泉" class="footer-mascot-img" width="48" height="47" style="width:48px;height:47px;">
           <span>つるが丘温泉</span>
         </div>
         <p class="footer-address">〒546-0035 大阪府大阪市東住吉区山坂5-4-13</p>
+        <div class="footer-bubbles">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
         <p class="footer-copy">&copy; つるが丘温泉</p>
       </div>
     </div>

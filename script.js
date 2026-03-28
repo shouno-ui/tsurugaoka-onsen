@@ -35,10 +35,10 @@ nav.querySelectorAll('a').forEach(link => {
   });
 });
 
-// スクロールアニメーション
+// スクロールアニメーション（段階的に表示）
 const observerOptions = {
   threshold: 0.05,
-  rootMargin: '0px 0px 0px 0px'
+  rootMargin: '0px 0px -30px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -49,19 +49,22 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.bath-card, .sauna-card, .feature-card, .flow-step').forEach(el => {
+// アニメーション対象要素を段階的に表示
+const animTargets = document.querySelectorAll(
+  '.bath-card, .sauna-card, .feature-card, .flow-step, .info-item, .price-item, .amenity'
+);
+
+animTargets.forEach((el, i) => {
   el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = `opacity 0.6s ease ${i % 6 * 0.08}s, transform 0.6s ease ${i % 6 * 0.08}s`;
   observer.observe(el);
 });
 
-// visible クラスが追加されたら表示
-const style = document.createElement('style');
-style.textContent = `
-  .visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-`;
-document.head.appendChild(style);
+// セクションタイトルのアニメーション
+document.querySelectorAll('.section-title').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(16px)';
+  el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+  observer.observe(el);
+});

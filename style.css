@@ -113,14 +113,9 @@ body {
 .hero {
   position: relative;
   background: linear-gradient(160deg, #D4F1F9 0%, #B8E8F5 30%, #8DD8ED 60%, #6CCDE8 100%);
-  padding: 160px 24px 120px;
+  padding: 110px 24px 80px;
   text-align: center;
   overflow: hidden;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 /* 湯気アニメーション */

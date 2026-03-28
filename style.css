@@ -174,7 +174,12 @@ body {
 .hero-mascot {
   flex-shrink: 0;
   animation: mascotBounce 3s ease-in-out infinite;
-  filter: drop-shadow(0 8px 24px rgba(76,200,224,0.3));
+}
+.hero-mascot img {
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 8px 32px rgba(76,200,224,0.25);
 }
 
 @keyframes mascotBounce {
@@ -417,7 +422,8 @@ body {
   background: linear-gradient(135deg, #D4F1F9, #B8E8F5);
   box-shadow: 0 4px 16px rgba(76,200,224,0.2);
 }
-.bath-emoji { font-size: 2rem; }
+/* bath-icon SVGs inside wrap */
+.bath-icon-wrap svg { display: block; }
 
 .bath-card h3 {
   font-size: 1.1rem;
@@ -528,8 +534,11 @@ body {
   box-shadow: var(--shadow-lg);
 }
 .sauna-icon {
-  font-size: 2.8rem;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+}
+.flow-icon {
+  display: block;
+  margin: 0 auto 4px;
 }
 .sauna-card h3 {
   font-size: 1.2rem;

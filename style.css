@@ -113,7 +113,7 @@ body {
 .hero {
   position: relative;
   background: linear-gradient(160deg, #D4F1F9 0%, #B8E8F5 30%, #8DD8ED 60%, #6CCDE8 100%);
-  padding: 110px 24px 80px;
+  padding: 90px 24px 40px;
   text-align: center;
   overflow: hidden;
 }

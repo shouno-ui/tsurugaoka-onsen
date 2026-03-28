@@ -826,7 +826,7 @@ body {
   margin-bottom: 12px;
 }
 .footer-mascot-img {
-  filter: brightness(0) invert(1);
+  /* 内側白色の画像なのでフィルター不要 */
 }
 .footer-address {
   font-size: 0.85rem;

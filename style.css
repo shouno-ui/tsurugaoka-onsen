@@ -87,6 +87,18 @@ body {
   color: var(--primary-dark);
 }
 
+.logo-mascot-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
 .nav {
   display: flex;
   gap: 28px;
@@ -207,6 +219,18 @@ body {
 .hero-mascot {
   margin-bottom: 20px;
   animation: bounce 3s ease-in-out infinite;
+}
+
+.hero-mascot img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.hero-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 @keyframes bounce {
@@ -631,6 +655,13 @@ body {
   margin-bottom: 12px;
 }
 
+.footer-mascot-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
 .footer-address {
   font-size: 0.85rem;
   opacity: 0.8;
@@ -747,9 +778,13 @@ body {
     font-size: 1.8rem;
   }
 
-  .hero-mascot svg {
+  .hero-mascot img {
     width: 120px;
     height: 120px;
+  }
+
+  .hero-logo-img {
+    height: 40px;
   }
 
   .totonoi-flow {

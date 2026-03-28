@@ -88,15 +88,19 @@ body {
 }
 
 .logo-mascot-img {
-  height: 44px;
+  max-height: 44px;
   width: auto;
+  height: 44px;
   object-fit: contain;
+  display: block;
 }
 
 .logo-text-img {
-  height: 32px;
+  max-height: 32px;
   width: auto;
+  height: 32px;
   object-fit: contain;
+  display: block;
 }
 
 .nav {
@@ -222,15 +226,23 @@ body {
 }
 
 .hero-mascot img {
-  width: 180px;
-  height: 180px;
+  max-width: 180px;
+  max-height: 180px;
+  width: auto;
+  height: auto;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-logo-img {
-  height: 60px;
+  max-height: 60px;
+  max-width: 360px;
   width: auto;
+  height: auto;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 @keyframes bounce {
